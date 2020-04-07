@@ -63,9 +63,9 @@ def downloadRawDataExport(e_api_key, table_id, export_name):
     zip = zipfile.ZipFile(zipname)
     zip.extractall(export_dir)
 
-def deleteRawDataExportFiles(export_name):
+def deleteRawDataExportFiles(export_path):
 
-    zip_file = export_name+".zip"
+    zip_file = export_path+".zip"
     ## Delete Zip
     if os.path.isfile(zip_file):
         os.remove(zip_file)
@@ -73,7 +73,7 @@ def deleteRawDataExportFiles(export_name):
     else:
         print("Error: %s file not found" % zip_file)
 
-    csv_file = export_name+".csv"
+    csv_file = export_path+".csv"
     ## Delete CSV
     if os.path.isfile(csv_file):
         os.remove(csv_file)
