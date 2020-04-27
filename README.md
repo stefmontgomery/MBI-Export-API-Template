@@ -13,4 +13,8 @@ This script does the following:
 2. Download the newly refreshed raw data export as a CSV to an export directory. At this point, you can do something with the data.
 3. Delete the downloaded zip file and CSV from the export directory.
 
+**PLEASE NOTE:**
+
+This app is not endorsed or supported by Adobe.
+
 This repo is _not_ actively maintained, and no changes are anticipated.
